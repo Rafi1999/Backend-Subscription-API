@@ -1,4 +1,5 @@
 # 📌 Backend Subscription API
+Live Link : **https://backend-subscription-api.vercel.app/**
 
 This is a **Node.js backend API** for user authentication, subscription management, and content fetching. It is built using **Express.js, MongoDB, and JWT authentication**.
 
@@ -45,6 +46,6 @@ JWT_SECRET=your_secret_key
 npm start
 ```
 
-Server should be running on **http://localhost:PORT || 5000**
+Server should be running on **http://localhost:5000**
 
 
