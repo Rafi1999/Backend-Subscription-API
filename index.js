@@ -1,5 +1,4 @@
 require('dotenv').config();
-console.log("🔑 JWT_SECRET:", process.env.JWT_SECRET); // Debugging
 
 const express = require('express');
 const mongoose = require('./config/db.js');
@@ -18,4 +17,10 @@ app.use('/api/subscription', subscriptionRoutes);
 app.use('/api/content', contentRoutes);
 
 const PORT = process.env.PORT || 5000;
+
+app.get("/", (req, res) => {
+    res.status(200).json({
+      message: "Hello from root!",
+    });
+  });
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
